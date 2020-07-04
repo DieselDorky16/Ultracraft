@@ -1,0 +1,40 @@
+package com.christopher.ultracraftmod.util;
+
+import com.christopher.ultracraftmod.UltraCraftMod;
+import com.christopher.ultracraftmod.blocks.BlockInit;
+import com.christopher.ultracraftmod.items.BuildingBlocksItem;
+import com.christopher.ultracraftmod.items.CommandsOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+
+public abstract class VanillaHandler {
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, UltraCraftMod.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, UltraCraftMod.MOD_ID);
+
+    public static void init() {
+        ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    }
+    public static final RegistryObject<Block> NETHERITE_SLAB = BLOCKS.register("netherite_slab", () -> new SlabBlock(Block.Properties.from(Blocks.field_235397_ng_)));
+    public static final RegistryObject<Block> NETHERITE_STAIRS = BLOCKS.register("netherite_stairs", () -> new StairsBlock(()->Blocks.field_235397_ng_.getDefaultState(),Block.Properties.from(Blocks.field_235397_ng_)));
+    public static final RegistryObject<Block> OBSIDIAN_STAIRS = BLOCKS.register("obsidian_stairs", () -> new StairsBlock(()->Blocks.OBSIDIAN.getDefaultState(),Block.Properties.from(Blocks.OBSIDIAN)));
+    public static final RegistryObject<Block> CRYING_OBSIDIAN_STAIRS = BLOCKS.register("crying_obsidian_stairs", () -> new StairsBlock(()->Blocks.field_235399_ni_.getDefaultState(),Block.Properties.from(Blocks.field_235399_ni_)));
+
+    //BlockItems
+    public static final RegistryObject<Item> NETHERITE_SLAB_ITEM = ITEMS.register("netherite_slab", () -> new BuildingBlocksItem(NETHERITE_SLAB.get()));
+    public static final RegistryObject<Item> NETHERITE_STAIRS_ITEM = ITEMS.register("netherite_stairs", () -> new BuildingBlocksItem(NETHERITE_STAIRS.get()));
+    public static final RegistryObject<Item> OBSIDIAN_STAIRS_ITEM = ITEMS.register("obsidian_stairs", () -> new BuildingBlocksItem(OBSIDIAN_STAIRS.get()));
+    public static final RegistryObject<Item> CRYING_OBSIDIAN_STAIRS_ITEM = ITEMS.register("crying_obsidian_stairs", () -> new BuildingBlocksItem(CRYING_OBSIDIAN_STAIRS.get()));
+
+
+    //CursedObjects
+    public static final RegistryObject<Block> NETHER_PORTAL_STAIRS = BLOCKS.register("nether_portal_stairs", () -> new StairsBlock(()->Blocks.NETHER_PORTAL.getDefaultState(),Block.Properties.from(Blocks.NETHER_PORTAL)));
+    public static final RegistryObject<Item> NETHER_PORTAL_STAIR_ITEM = ITEMS.register("nether_portal_stairs", () -> new CommandsOnly(NETHER_PORTAL_STAIRS.get()));
+}

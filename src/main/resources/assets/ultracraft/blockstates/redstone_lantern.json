@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "ultracraft:block/redstone_lantern"
+    },
+    "hanging=true": {
+      "model": "ultracraft:block/redstone_lantern_hanging"
+    }
+  }
+}

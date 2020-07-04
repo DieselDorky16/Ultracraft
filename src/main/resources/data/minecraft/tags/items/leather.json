@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:leather",
+    "ultracraft:brown_mooshroom_leather",
+    "ultracraft:cow_leather",
+    "ultracraft:donkey_leather",
+    "ultracraft:hoglin_leather",
+    "ultracraft:horse_leather",
+    "ultracraft:llama_leather",
+    "ultracraft:mule_leather",
+    "ultracraft:red_mooshroom_leather"
+  ]
+}

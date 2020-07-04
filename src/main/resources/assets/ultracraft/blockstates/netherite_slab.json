@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ultracraft:block/netherite_slab"
+    },
+    "type=double": {
+      "model": "ultracraft:block/warped_nether_bricks"
+    },
+    "type=top": {
+      "model": "ultracraft:block/netherite_slab_top"
+    }
+  }
+}

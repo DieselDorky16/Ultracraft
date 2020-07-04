@@ -1,0 +1,55 @@
+{
+  "language.name": "English",
+  "language.region": "United States",
+  "language.code": "en_us",
+
+  //THIS IS SUPPOSED TO FIX NAMING ISSUES!
+
+  "subtitles.ambient.underwater.enter": "Water splorches",
+  "subtitles.ambient.underwater.exit": "Water blouches",
+  
+  "subtitles.entity.bat.loop": "Bat flutters",
+  "subtitles.entity.ghast.scream": "Ghast hoots",
+  "subtitles.entity.wolf.howl": "Wolf howls",
+  
+  "subtitles.entity.minecart.inside": "Minecart clatters",
+  
+  "subtitles.item.elytra.flying": "Soaring",
+  
+  "subtitles.entity.enderman.scream": "Enderman screeches",
+  "subtitles.entity.wolf.ambient": "Wolf barks",
+  "subtitles.entity.wolf.pant": "Wolf pants",
+  "subtitles.entity.wolf.whine": "Wolf whines",
+
+  //Entities
+  "entity.minecraft.zombie_villager": "Zombified Villager",
+  "entity.minecraft.zombie_horse": "Zombified Horse",
+  "entity.minecraft.zoglin": "Zombified Hoglin",
+
+  //Items - Spawn Eggs
+  "item.minecraft.zoglin_spawn_egg": "Zombified Hoglin Spawn Egg",
+  "item.minecraft.zombie_horse_spawn_egg": "Zombified Horse Spawn Egg",
+  "item.minecraft.zombie_villager_spawn_egg": "Zombified Villager Spawn Egg",
+
+  //Advancements
+  "advancements.story.cure_zombie_villager.description": "Weaken and then cure a Zombified Villager",
+  "advancements.story.cure_zombie_villager.title": "Zombified Doctor",
+
+
+  //Subtitles - Base Entities Only
+  "subtitles.entity.hoglin.converted_to_zombified": "Hoglin converts to Zombified Hoglin",
+  "subtitles.entity.zoglin.ambient": "Zombified Hoglin growls",
+  "subtitles.entity.zoglin.angry": "Zombified Hoglin growls angrily",
+  "subtitles.entity.zoglin.attack": "Zombified Hoglin attacks",
+  "subtitles.entity.zoglin.death": "Zombified Hoglin dies",
+  "subtitles.entity.zoglin.hurt": "Zombified Hoglin hurts",
+  "subtitles.entity.zoglin.step": "Zombified Hoglin steps",
+  "subtitles.entity.zombie_horse.ambient": "Zombified Horse cries",
+  "subtitles.entity.zombie_horse.death": "Zombified Horse dies",
+  "subtitles.entity.zombie_horse.hurt": "Zombified Horse hurts",
+  "subtitles.entity.zombie_villager.ambient": "Zombified Villager groans",
+  "subtitles.entity.zombie_villager.converted": "Zombified Villager vociferates",
+  "subtitles.entity.zombie_villager.cure": "Zombified Villager snuffles",
+  "subtitles.entity.zombie_villager.death": "Zombified Villager dies",
+  "subtitles.entity.zombie_villager.hurt": "Zombified Villager hurts"
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "ultracraft:block/soul_end_rod",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "ultracraft:block/soul_end_rod",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "ultracraft:block/soul_end_rod",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "ultracraft:block/soul_end_rod",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "ultracraft:block/soul_end_rod"
+    },
+    "facing=west": {
+      "model": "ultracraft:block/soul_end_rod",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

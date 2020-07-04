@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ultracraft:block/soul_root",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ultracraft:block/soul_root_top"
+    },
+    "axis=z": {
+      "model": "ultracraft:block/soul_root",
+      "x": 90
+    }
+  }
+}
