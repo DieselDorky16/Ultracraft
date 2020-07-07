@@ -5,9 +5,12 @@ import com.christopher.ultracraftmod.items.BlockItemInit;
 import com.christopher.ultracraftmod.items.ItemInit;
 import com.christopher.ultracraftmod.util.UnobtainablesHandler;
 import com.christopher.ultracraftmod.util.VanillaHandler;
+import com.christopher.ultracraftmod.world.gen.CrimsonBerriesGen;
 import com.christopher.ultracraftmod.world.gen.SoulMagmaGen;
+import com.christopher.ultracraftmod.world.gen.WarpedBerriesGen;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -69,7 +72,16 @@ public class UltraCraftMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
+
+        DeferredWorkQueue.runLater(() -> {
+            ComposterBlock.registerCompostable(0.3F, ItemInit.CRIMSON_BERRIES.get());
+        });
+        DeferredWorkQueue.runLater(() -> {
+            ComposterBlock.registerCompostable(0.3F, ItemInit.WARPED_BERRIES.get());
+        });
         DeferredWorkQueue.runLater(SoulMagmaGen::generateOre);
+        DeferredWorkQueue.runLater(CrimsonBerriesGen::generatePlants);
+        DeferredWorkQueue.runLater(WarpedBerriesGen::generatePlants);
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

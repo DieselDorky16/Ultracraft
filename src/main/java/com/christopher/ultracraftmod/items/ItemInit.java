@@ -4,6 +4,7 @@ import com.christopher.ultracraftmod.UltraCraftMod;
 import com.christopher.ultracraftmod.blocks.BlockInit;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockNamedItem;
+import net.minecraft.item.Foods;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
@@ -22,4 +23,6 @@ public abstract class ItemInit {
     public static final RegistryObject<Item> DONKEY_LEATHER = ITEMS.register("donkey_leather", () -> new Item((new Item.Properties()).group(ItemGroup.MATERIALS)));
     public static final RegistryObject<Item> RED_MOOSHROOM_LEATHER = ITEMS.register("red_mooshroom_leather", () -> new Item((new Item.Properties()).group(ItemGroup.MATERIALS)));
     public static final RegistryObject<Item> BROWN_MOOSHROOM_LEATHER = ITEMS.register("brown_mooshroom_leather", () -> new Item((new Item.Properties()).group(ItemGroup.MATERIALS)));
+    public static final RegistryObject<Item> CRIMSON_BERRIES = ITEMS.register("crimson_berries", () -> new BlockNamedItem(BlockInit.CRIMSON_BERRY_BUSH.get(), (new Item.Properties()).group(ItemGroup.FOOD).food(Foods.SWEET_BERRIES)));
+    public static final RegistryObject<Item> WARPED_BERRIES = ITEMS.register("warped_berries", () -> new BlockNamedItem(BlockInit.WARPED_BERRY_BUSH.get(), (new Item.Properties()).group(ItemGroup.FOOD).food(Foods.SWEET_BERRIES)));
 }

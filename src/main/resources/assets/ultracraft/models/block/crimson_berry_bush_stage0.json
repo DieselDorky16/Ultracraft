@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ultracraft:block/crimson_berry_bush_stage0"
+  }
+}
