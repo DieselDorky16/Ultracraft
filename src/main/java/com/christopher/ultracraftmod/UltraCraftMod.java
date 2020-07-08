@@ -79,6 +79,9 @@ public class UltraCraftMod
         DeferredWorkQueue.runLater(() -> {
             ComposterBlock.registerCompostable(0.3F, ItemInit.WARPED_BERRIES.get());
         });
+        DeferredWorkQueue.runLater(() -> {
+            ComposterBlock.registerCompostable(0.65F, BlockInit.SOUL_SHROOMLIGHT.get());
+        });
         DeferredWorkQueue.runLater(SoulMagmaGen::generateOre);
         DeferredWorkQueue.runLater(CrimsonBerriesGen::generatePlants);
         DeferredWorkQueue.runLater(WarpedBerriesGen::generatePlants);

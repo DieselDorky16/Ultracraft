@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "ultracraft:warped_nether_bricks"
+  },
+  "result": "ultracraft:warped_nether_brick_slab",
+  "count": 2
+}
