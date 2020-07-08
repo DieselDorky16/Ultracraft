@@ -2,7 +2,6 @@ package com.christopher.ultracraftmod.items;
 
 import com.christopher.ultracraftmod.UltraCraftMod;
 import com.christopher.ultracraftmod.blocks.BlockInit;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockNamedItem;
 import net.minecraft.item.Foods;
 import net.minecraft.item.Item;

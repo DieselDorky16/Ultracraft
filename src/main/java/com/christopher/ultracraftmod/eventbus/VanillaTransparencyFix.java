@@ -1,11 +1,9 @@
 package com.christopher.ultracraftmod.eventbus;
 
 import com.christopher.ultracraftmod.UltraCraftMod;
-import com.christopher.ultracraftmod.blocks.BlockInit;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.entity.EntityType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;

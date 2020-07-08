@@ -1,9 +1,9 @@
 package com.christopher.ultracraftmod.util;
 
 import com.christopher.ultracraftmod.UltraCraftMod;
-import com.christopher.ultracraftmod.blocks.BlockInit;
 import com.christopher.ultracraftmod.items.BuildingBlocksItem;
 import com.christopher.ultracraftmod.items.CommandsOnly;
+import com.christopher.ultracraftmod.items.netherite_groups.BuildingBlocksItem_NETHERITE;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
@@ -28,8 +28,8 @@ public abstract class VanillaHandler {
     public static final RegistryObject<Block> CRYING_OBSIDIAN_STAIRS = BLOCKS.register("crying_obsidian_stairs", () -> new StairsBlock(()->Blocks.field_235399_ni_.getDefaultState(),Block.Properties.from(Blocks.field_235399_ni_)));
 
     //BlockItems
-    public static final RegistryObject<Item> NETHERITE_SLAB_ITEM = ITEMS.register("netherite_slab", () -> new BuildingBlocksItem(NETHERITE_SLAB.get()));
-    public static final RegistryObject<Item> NETHERITE_STAIRS_ITEM = ITEMS.register("netherite_stairs", () -> new BuildingBlocksItem(NETHERITE_STAIRS.get()));
+    public static final RegistryObject<Item> NETHERITE_SLAB_ITEM = ITEMS.register("netherite_slab", () -> new BuildingBlocksItem_NETHERITE(NETHERITE_SLAB.get()));
+    public static final RegistryObject<Item> NETHERITE_STAIRS_ITEM = ITEMS.register("netherite_stairs", () -> new BuildingBlocksItem_NETHERITE(NETHERITE_STAIRS.get()));
     public static final RegistryObject<Item> OBSIDIAN_STAIRS_ITEM = ITEMS.register("obsidian_stairs", () -> new BuildingBlocksItem(OBSIDIAN_STAIRS.get()));
     public static final RegistryObject<Item> CRYING_OBSIDIAN_STAIRS_ITEM = ITEMS.register("crying_obsidian_stairs", () -> new BuildingBlocksItem(CRYING_OBSIDIAN_STAIRS.get()));
 

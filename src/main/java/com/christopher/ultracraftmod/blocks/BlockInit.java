@@ -3,12 +3,13 @@ package com.christopher.ultracraftmod.blocks;
 import com.christopher.ultracraftmod.UltraCraftMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.PistonBlock;
+import net.minecraft.block.OreBlock;
 import net.minecraft.block.SlabBlock;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -35,6 +36,7 @@ public abstract class BlockInit {
     public static final RegistryObject<Block> CRIMSON_BERRY_BUSH = BLOCKS.register("crimson_berry_bush", CrimsonBerries::new);
     public static final RegistryObject<Block> WARPED_BERRY_BUSH = BLOCKS.register("warped_berry_bush", WarpedBerries::new);
     public static final RegistryObject<Block> NETHERITE_TRAPDOOR = BLOCKS.register("netherite_trapdoor", NetheriteTrapdoor::new);
+    public static final RegistryObject<Block> NETHER_IRON_ORE = BLOCKS.register("nether_iron_ore", () -> new OreBlock(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).func_235861_h_().hardnessAndResistance(3.0F, 3.0F).sound(SoundType.field_235598_T_)));
 
 
 }

@@ -36,5 +36,6 @@ public abstract class BlockItemInit {
     public static final RegistryObject<Item> REDSTONE_CAMPFIRE = ITEMS.register("redstone_campfire", () -> new RedstoneBlocksItem(BlockInit.REDSTONE_CAMPFIRE.get()));
     public static final RegistryObject<Item> REDSTONE_END_ROD = ITEMS.register("redstone_end_rod", () -> new RedstoneBlocksItem(BlockInit.REDSTONE_END_ROD.get()));
     public static final RegistryObject<Item> NETHERITE_TRAPDOOR = ITEMS.register("netherite_trapdoor", () -> new RedstoneBlocksItem_NETHERITE(BlockInit.NETHERITE_TRAPDOOR.get()));
+    public static final RegistryObject<Item> NETHER_IRON_ORE = ITEMS.register("nether_iron_ore", () -> new BuildingBlocksItem(BlockInit.NETHER_IRON_ORE.get()));
 
 }

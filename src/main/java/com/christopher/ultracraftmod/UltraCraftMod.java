@@ -6,10 +6,9 @@ import com.christopher.ultracraftmod.items.ItemInit;
 import com.christopher.ultracraftmod.util.UnobtainablesHandler;
 import com.christopher.ultracraftmod.util.VanillaHandler;
 import com.christopher.ultracraftmod.world.gen.CrimsonBerriesGen;
+import com.christopher.ultracraftmod.world.gen.NetherIronOreGen;
 import com.christopher.ultracraftmod.world.gen.SoulMagmaGen;
 import com.christopher.ultracraftmod.world.gen.WarpedBerriesGen;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -17,19 +16,13 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DeferredWorkQueue;
-import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.stream.Collectors;
 
 @SuppressWarnings("deprecation")
 @Mod("ultracraft")
@@ -83,6 +76,7 @@ public class UltraCraftMod
             ComposterBlock.registerCompostable(0.65F, BlockInit.SOUL_SHROOMLIGHT.get());
         });
         DeferredWorkQueue.runLater(SoulMagmaGen::generateOre);
+        DeferredWorkQueue.runLater(NetherIronOreGen::generateOre);
         DeferredWorkQueue.runLater(CrimsonBerriesGen::generatePlants);
         DeferredWorkQueue.runLater(WarpedBerriesGen::generatePlants);
     }

@@ -11,8 +11,6 @@ YOU MAY HAVE SEEN THESE UNOBTAINABLES ON R/PHOENIXSC...
 package com.christopher.ultracraftmod.util;
 
 import com.christopher.ultracraftmod.UltraCraftMod;
-import com.christopher.ultracraftmod.blocks.BlockInit;
-import com.christopher.ultracraftmod.items.BuildingBlocksItem;
 import com.christopher.ultracraftmod.items.CommandsOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
