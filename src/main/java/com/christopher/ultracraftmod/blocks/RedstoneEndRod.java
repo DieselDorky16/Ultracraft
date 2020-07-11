@@ -1,6 +1,6 @@
 package com.christopher.ultracraftmod.blocks;
 
-import com.christopher.ultracraftmod.customInterface.BlockLightingRegistries;
+import com.christopher.ultracraftmod.util.references.BlockLightingRegistries;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.EndRodBlock;
 import net.minecraft.block.SoundType;

@@ -1,4 +1,4 @@
-package com.christopher.ultracraftmod.customInterface;
+package com.christopher.ultracraftmod.util.references;
 
 public interface SurfaceDamageFloat {
     public static final int normal = 1;

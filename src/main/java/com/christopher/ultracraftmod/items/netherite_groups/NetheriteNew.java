@@ -1,4 +1,4 @@
-package com.christopher.ultracraftmod.items;
+package com.christopher.ultracraftmod.items.netherite_groups;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

@@ -1,6 +1,6 @@
 package com.christopher.ultracraftmod.world.gen;
 
-import com.christopher.ultracraftmod.customInterface.NetherBiome;
+import com.christopher.ultracraftmod.util.references.NetherBiome;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;

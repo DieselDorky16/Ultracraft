@@ -1,6 +1,6 @@
 package com.christopher.ultracraftmod.blocks;
 
-import com.christopher.ultracraftmod.customInterface.NetherWartColor;
+import com.christopher.ultracraftmod.util.references.NetherWartColor;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

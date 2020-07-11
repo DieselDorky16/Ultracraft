@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "ultracraft:wooden_hammer",
+    "ultracraft:stone_hammer",
+    "ultracraft:iron_hammer",
+    "ultracraft:golden_hammer",
+    "ultracraft:diamond_hammer",
+    "ultracraft:netherite_hammer"
+  ]
+}

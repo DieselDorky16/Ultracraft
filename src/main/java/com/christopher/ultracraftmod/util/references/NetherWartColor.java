@@ -1,4 +1,4 @@
-package com.christopher.ultracraftmod.customInterface;
+package com.christopher.ultracraftmod.util.references;
 
 import net.minecraft.block.material.MaterialColor;
 

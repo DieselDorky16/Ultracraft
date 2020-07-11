@@ -1,7 +1,7 @@
 package com.christopher.ultracraftmod.blocks;
 
-import com.christopher.ultracraftmod.customInterface.BlockLightingRegistries;
-import com.christopher.ultracraftmod.customInterface.SurfaceDamageFloat;
+import com.christopher.ultracraftmod.util.references.BlockLightingRegistries;
+import com.christopher.ultracraftmod.util.references.SurfaceDamageFloat;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.MagmaBlock;
