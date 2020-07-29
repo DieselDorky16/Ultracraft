@@ -1,0 +1,6 @@
+{
+  "parent": "ultracraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "ultracraft:block/mossy_polished_blackstone_bricks"
+  }
+}

@@ -1,7 +1,7 @@
 package com.christopher.ultracraftmod.blocks;
 
-import com.christopher.ultracraftmod.util.references.NetherWartColor;
 import com.christopher.ultracraftmod.items.ItemInit;
+import com.christopher.ultracraftmod.util.references.NetherWartColor;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.NetherWartBlock;

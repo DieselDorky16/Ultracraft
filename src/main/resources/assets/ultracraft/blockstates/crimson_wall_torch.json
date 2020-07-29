@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "ultracraft:block/crimson_wall_torch"
+    },
+    "facing=north": {
+      "model": "ultracraft:block/crimson_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "ultracraft:block/crimson_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "ultracraft:block/crimson_wall_torch",
+      "y": 180
+    }
+  }
+}

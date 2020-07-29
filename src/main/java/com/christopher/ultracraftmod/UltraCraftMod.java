@@ -4,6 +4,8 @@ import com.christopher.ultracraftmod.blocks.BlockInit;
 import com.christopher.ultracraftmod.enchantments.EnchantmentsInit;
 import com.christopher.ultracraftmod.items.BlockItemInit;
 import com.christopher.ultracraftmod.items.ItemInit;
+import com.christopher.ultracraftmod.items.ModSpawnEggInit;
+import com.christopher.ultracraftmod.potions.ModPotions;
 import com.christopher.ultracraftmod.util.UnobtainablesHandler;
 import com.christopher.ultracraftmod.util.VanillaHandler;
 import com.christopher.ultracraftmod.world.gen.CrimsonBerriesGen;
@@ -13,8 +15,12 @@ import com.christopher.ultracraftmod.world.gen.WarpedBerriesGen;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.IngameMenuScreen;
+import net.minecraft.client.gui.widget.Widget;
+import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraftforge.client.event.GuiScreenEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,17 +36,18 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import net.minecraft.client.gui.widget.Widget;
-import net.minecraft.client.gui.widget.button.Button;
 
 @SuppressWarnings("deprecation")
 @Mod("ultracraft")
 @Mod.EventBusSubscriber(modid = UltraCraftMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class UltraCraftMod
-{
+public class UltraCraftMod {
+
     private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "ultracraft";
     public static UltraCraftMod instance;
+    public static ResourceLocation location(String name) {
+        return new ResourceLocation(MOD_ID, name);
+    }
 
     public UltraCraftMod() {
 
@@ -52,10 +59,16 @@ public class UltraCraftMod
         ItemInit.ITEMS.register(modEventBus);
         EnchantmentsInit.ENCHANTMENTS.register(modEventBus);
 
+        //Subregistries
+        ModSpawnEggInit.ITEMS.register(modEventBus);
+
         //MultiForgeRegistry Abstract Classes
         BlockItemInit.init();
         VanillaHandler.init();
         UnobtainablesHandler.init();
+        ModPotions.init();
+
+
 
 
         //Setting up instance
@@ -73,9 +86,9 @@ public class UltraCraftMod
         final IForgeRegistry<Item> registry = event.getRegistry();
     }
 
+
     private void setup(final FMLCommonSetupEvent event)
     {
-
         DeferredWorkQueue.runLater(() -> {
             ComposterBlock.registerCompostable(0.3F, ItemInit.CRIMSON_BERRIES.get());
         });
@@ -83,7 +96,13 @@ public class UltraCraftMod
             ComposterBlock.registerCompostable(0.3F, ItemInit.WARPED_BERRIES.get());
         });
         DeferredWorkQueue.runLater(() -> {
+            ComposterBlock.registerCompostable(0.65F, ItemInit.WARPED_WART.get());
+        });
+        DeferredWorkQueue.runLater(() -> {
             ComposterBlock.registerCompostable(0.65F, BlockInit.SOUL_SHROOMLIGHT.get());
+        });
+        DeferredWorkQueue.runLater(() -> {
+            ComposterBlock.registerCompostable(0.85F, Items.ROTTEN_FLESH.getItem());
         });
         DeferredWorkQueue.runLater(SoulMagmaGen::generateOre);
         DeferredWorkQueue.runLater(NetherIronOreGen::generateOre);
@@ -118,5 +137,7 @@ public class UltraCraftMod
                 in.field_230691_m_ -= 16;
             }
         }
+
     }
+
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "sugar",
+  "ingredients": [
+    {
+      "item": "ultracraft:cinnamon_stick"
+    }
+  ],
+  "result": {
+    "item": "ultracraft:cinnamon_sugar"
+  }
+}

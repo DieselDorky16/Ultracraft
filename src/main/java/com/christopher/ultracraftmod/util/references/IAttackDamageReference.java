@@ -28,12 +28,12 @@ public interface IAttackDamageReference {
     }
 
     public static interface AttackSpeedProperties {
-        public static final float GOLD = -3.0F;
-        public static final float WOODEN = -3.2F;
-        public static final float STONE = -3.2F;
-        public static final float IRON = -3.1F;
-        public static final float DIAMOND = -3.0F;
-        public static final float NETHERITE = -3.0F;
+        public static final float GOLD = -2.5F;
+        public static final float WOODEN = -2.7F;
+        public static final float STONE = -2.7F;
+        public static final float IRON = -2.6F;
+        public static final float DIAMOND = -2.5F;
+        public static final float NETHERITE = -2.5F;
 
     }
 

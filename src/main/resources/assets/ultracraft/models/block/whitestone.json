@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ultracraft:block/whitestone_top",
+    "side": "ultracraft:block/whitestone"
+  }
+}

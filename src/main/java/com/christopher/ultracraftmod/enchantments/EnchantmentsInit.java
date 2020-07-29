@@ -3,7 +3,6 @@ package com.christopher.ultracraftmod.enchantments;
 import com.christopher.ultracraftmod.UltraCraftMod;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
-import net.minecraft.enchantment.Enchantments;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;

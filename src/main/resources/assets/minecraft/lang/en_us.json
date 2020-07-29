@@ -3,6 +3,10 @@
   "language.region": "United States",
   "language.code": "en_us",
 
+  //Changing block names to be consistent
+
+  "block.minecraft.bookshelf": "Oak Bookshelf",
+
   //THIS IS SUPPOSED TO FIX NAMING ISSUES!
 
   "subtitles.ambient.underwater.enter": "Water splorches",

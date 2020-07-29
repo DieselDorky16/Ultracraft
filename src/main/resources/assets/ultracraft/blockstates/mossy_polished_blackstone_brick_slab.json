@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ultracraft:block/mossy_polished_blackstone_brick_slab"
+    },
+    "type=double": {
+      "model": "ultracraft:block/mossy_polished_blackstone_bricks"
+    },
+    "type=top": {
+      "model": "ultracraft:block/mossy_polished_blackstone_brick_slab_top"
+    }
+  }
+}

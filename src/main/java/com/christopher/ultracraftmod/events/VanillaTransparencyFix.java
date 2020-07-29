@@ -1,4 +1,4 @@
-package com.christopher.ultracraftmod.eventbus;
+package com.christopher.ultracraftmod.events;
 
 import com.christopher.ultracraftmod.UltraCraftMod;
 import net.minecraft.block.Blocks;

@@ -17,7 +17,8 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public abstract class ItemInit {
+@SuppressWarnings("deprecation")
+public abstract class  ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, UltraCraftMod.MOD_ID);
     public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget", NetheriteNew::new);
     public static final RegistryObject<Item> WARPED_WART = ITEMS.register("warped_wart", () -> new BlockNamedItem(BlockInit.WARPED_WART.get(), (new Item.Properties()).group(ItemGroup.MATERIALS)));
@@ -37,4 +38,7 @@ public abstract class ItemInit {
     public static final RegistryObject<Item> GOLDEN_HAMMER = ITEMS.register("golden_hammer", GoldHammer::new);
     public static final RegistryObject<Item> DIAMOND_HAMMER = ITEMS.register("diamond_hammer", DiamondHammer::new);
     public static final RegistryObject<Item> NETHERITE_HAMMER = ITEMS.register("netherite_hammer", NetheriteHammer::new);
+    public static final RegistryObject<Item> CINNAMON_STICK = ITEMS.register("cinnamon_stick", () -> new BlockNamedItem(BlockInit.CINNAMON.get(), (new Item.Properties()).group(ItemGroup.DECORATIONS)));
+    public static final RegistryObject<Item> CINNAMON_SUGAR = ITEMS.register("cinnamon_sugar", () -> new Item((new Item.Properties()).group(ItemGroup.MATERIALS)));
+    public static final RegistryObject<Item> CINNAMON_BUN = ITEMS.register("cinnamon_bun", CinnamonBun::new);
 }

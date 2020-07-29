@@ -1,0 +1,6 @@
+{
+  "parent": "ultracraft:block/wall_inventory",
+  "textures": {
+    "wall": "ultracraft:block/mossy_polished_blackstone_bricks"
+  }
+}
