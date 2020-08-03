@@ -10,6 +10,6 @@ public interface IRepairMaterialReference {
     public static final Ingredient STONE = Ingredient.fromTag(ItemTags.field_232909_aa_);
     public static final Ingredient IRON = Ingredient.fromItems(Items.IRON_INGOT);
     public static final Ingredient DIAMOND = Ingredient.fromItems(Items.DIAMOND);
-    public static final Ingredient NETHERITE = Ingredient.fromItems(Items.field_234759_km_);
+    public static final Ingredient NETHERITE = Ingredient.fromItems(Items.NETHERITE_INGOT);
 
 }

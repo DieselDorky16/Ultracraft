@@ -18,7 +18,7 @@ public class CrimsonNyliumOnlyBushBlock extends Block implements net.minecraftfo
     }
 
     protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
-        return state.isIn(Blocks.field_235381_mu_);
+        return state.isIn(Blocks.CRIMSON_NYLIUM);
     }
 
     /**
@@ -43,7 +43,7 @@ public class CrimsonNyliumOnlyBushBlock extends Block implements net.minecraftfo
     }
 
     public boolean allowsMovement(BlockState state, IBlockReader worldIn, BlockPos pos, PathType type) {
-        return type == PathType.AIR && !this.field_235688_at_ ? true : super.allowsMovement(state, worldIn, pos, type);
+        return type == PathType.AIR && !this.canCollide ? true : super.allowsMovement(state, worldIn, pos, type);
     }
 
     @Override

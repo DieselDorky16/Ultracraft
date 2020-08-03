@@ -1,15 +1,5 @@
-Build: beta 1.0.0.54
-	Changed panorama to celebrate the original panorama seed
-	Changed a lot of textures (credit to VanillaTweaks.net)
-	Added Illusioner Spawn Egg
-	Added Bookshelf Variants
-	Added Box of Infinite Books (It doesn't work correctly)
-	You can now smelt netherite tools and armor into netherite nuggets, just like with iron and gold.
-	Added Cinnamon plants
-	Added Cinnamon sugar
-	Added Cinnamon Bun
-	Rotten Flesh is now compostable. Turn that crap into bonemeal...
-	Changed attack speed to be as fast (or close to fast) as an axe.
+Build: beta 1.0.0.56
+
 	
 	Fixed bugs
 

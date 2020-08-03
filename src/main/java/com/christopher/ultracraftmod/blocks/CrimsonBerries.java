@@ -79,7 +79,7 @@ public class CrimsonBerries extends BushBlock implements IGrowable {
     }
 
     public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
-        if (entityIn instanceof LivingEntity && entityIn.getType() != EntityType.field_233588_G_ && entityIn.getType() != EntityType.field_233591_ai_ && entityIn.getType() != EntityType.field_233592_ba_) {
+        if (entityIn instanceof LivingEntity && entityIn.getType() != EntityType.PIGLIN && entityIn.getType() != EntityType.HOGLIN && entityIn.getType() != EntityType.ZOMBIFIED_PIGLIN) {
             entityIn.setMotionMultiplier(state, new Vector3d((double) 0.8F, 0.75D, (double) 0.8F));
             if (!worldIn.isRemote && state.get(AGE) > 0 && (entityIn.lastTickPosX != entityIn.getPosX() || entityIn.lastTickPosZ != entityIn.getPosZ())) {
                 double d0 = Math.abs(entityIn.getPosX() - entityIn.lastTickPosX);
@@ -130,7 +130,7 @@ public class CrimsonBerries extends BushBlock implements IGrowable {
     @Override
     protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
         Block block = state.getBlock();
-        return block == Blocks.NETHERRACK || block == Blocks.field_235381_mu_;
+        return block == Blocks.NETHERRACK || block == Blocks.CRIMSON_NYLIUM;
     }
 
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {

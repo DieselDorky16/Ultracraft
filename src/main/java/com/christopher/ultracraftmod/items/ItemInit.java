@@ -9,6 +9,7 @@ import com.christopher.ultracraftmod.items.hammer.NetheriteHammer;
 import com.christopher.ultracraftmod.items.hammer.StoneHammer;
 import com.christopher.ultracraftmod.items.hammer.WoodenHammer;
 import com.christopher.ultracraftmod.items.netherite_groups.NetheriteNew;
+import com.christopher.ultracraftmod.items.special_powerups.LifeShroomItem;
 import net.minecraft.item.BlockNamedItem;
 import net.minecraft.item.Foods;
 import net.minecraft.item.Item;
@@ -20,6 +21,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 @SuppressWarnings("deprecation")
 public abstract class  ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, UltraCraftMod.MOD_ID);
+    public static final RegistryObject<Item> PIGLIN_EYE = ITEMS.register("piglin_eye", PiglinEyeItem::new);
     public static final RegistryObject<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget", NetheriteNew::new);
     public static final RegistryObject<Item> WARPED_WART = ITEMS.register("warped_wart", () -> new BlockNamedItem(BlockInit.WARPED_WART.get(), (new Item.Properties()).group(ItemGroup.MATERIALS)));
     public static final RegistryObject<Item> COW_LEATHER = ITEMS.register("cow_leather", () -> new Item((new Item.Properties()).group(ItemGroup.MATERIALS)));
@@ -41,4 +43,5 @@ public abstract class  ItemInit {
     public static final RegistryObject<Item> CINNAMON_STICK = ITEMS.register("cinnamon_stick", () -> new BlockNamedItem(BlockInit.CINNAMON.get(), (new Item.Properties()).group(ItemGroup.DECORATIONS)));
     public static final RegistryObject<Item> CINNAMON_SUGAR = ITEMS.register("cinnamon_sugar", () -> new Item((new Item.Properties()).group(ItemGroup.MATERIALS)));
     public static final RegistryObject<Item> CINNAMON_BUN = ITEMS.register("cinnamon_bun", CinnamonBun::new);
+    public static final RegistryObject<Item> LIFE_MUSHROOM = ITEMS.register("life_mushroom", LifeShroomItem::new);
 }

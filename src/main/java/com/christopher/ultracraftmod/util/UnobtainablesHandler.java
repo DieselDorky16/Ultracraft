@@ -32,7 +32,7 @@ public abstract class UnobtainablesHandler {
     public static final RegistryObject<Item> END_PORTAL = ITEMS.register("end_portal", () -> new CommandsOnly(Blocks.END_PORTAL));
     public static final RegistryObject<Item> END_GATEWAY = ITEMS.register("end_gateway", () -> new CommandsOnly(Blocks.END_GATEWAY));
     public static final RegistryObject<Item> FIRE = ITEMS.register("fire", () -> new CommandsOnly(Blocks.FIRE));
-    public static final RegistryObject<Item> SOUL_FIRE = ITEMS.register("soul_fire", () -> new CommandsOnly(Blocks.field_235335_bO_));
+    public static final RegistryObject<Item> SOUL_FIRE = ITEMS.register("soul_fire", () -> new CommandsOnly(Blocks.SOUL_FIRE));
     public static final RegistryObject<Item> WATER = ITEMS.register("water", () -> new CommandsOnly(Blocks.WATER));
     public static final RegistryObject<Item> LAVA = ITEMS.register("lava", () -> new CommandsOnly(Blocks.LAVA));
 }

@@ -42,8 +42,8 @@ public abstract class BlockInit {
     public static final RegistryObject<Block> CRIMSON_BERRY_BUSH = BLOCKS.register("crimson_berry_bush", CrimsonBerries::new);
     public static final RegistryObject<Block> WARPED_BERRY_BUSH = BLOCKS.register("warped_berry_bush", WarpedBerries::new);
     public static final RegistryObject<Block> NETHERITE_TRAPDOOR = BLOCKS.register("netherite_trapdoor", NetheriteTrapdoor::new);
-    public static final RegistryObject<Block> NETHER_IRON_ORE = BLOCKS.register("nether_iron_ore", () -> new OreBlock(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).func_235861_h_().hardnessAndResistance(3.0F, 3.0F).sound(SoundType.field_235598_T_)));
-    public static final RegistryObject<Block> GOLDEN_BARS = BLOCKS.register("golden_bars", () -> new PaneBlock(AbstractBlock.Properties.create(Material.IRON, MaterialColor.AIR).func_235861_h_().hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL).notSolid()));
+    public static final RegistryObject<Block> NETHER_IRON_ORE = BLOCKS.register("nether_iron_ore", () -> new OreBlock(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).setRequiresTool().hardnessAndResistance(3.0F, 3.0F).sound(SoundType.NETHER_GOLD)));
+    public static final RegistryObject<Block> GOLDEN_BARS = BLOCKS.register("golden_bars", () -> new PaneBlock(AbstractBlock.Properties.create(Material.IRON, MaterialColor.AIR).setRequiresTool().hardnessAndResistance(5.0F, 6.0F).sound(SoundType.METAL).notSolid()));
     public static final RegistryObject<Block> BLAST_FURNACE_TOP = BLOCKS.register("blast_stovetop", StoneBlock::new);
     public static final RegistryObject<Block> SMITHING_TABLE_TOP = BLOCKS.register("smithing_tabletop", StoneBlock::new);
     public static final RegistryObject<Block> WHITESTONE = BLOCKS.register("whitestone", StoneBlock::new);
@@ -56,10 +56,10 @@ public abstract class BlockInit {
     public static final RegistryObject<Block> WARPED_BOOKSHELF = BLOCKS.register("warped_bookshelf", BookshelfBlock::new);
     public static final RegistryObject<Block> CINNAMON = BLOCKS.register("cinnamon", () -> new CinnamonBlock(AbstractBlock.Properties.create(Material.BAMBOO, MaterialColor.BROWN).tickRandomly().zeroHardnessAndResistance().hardnessAndResistance(1.0F).sound(SoundType.BAMBOO).notSolid()));
     public static final RegistryObject<Block> BOOK_BOX = BLOCKS.register("book_box", BookBox::new);
-    public static final RegistryObject<Block> CRIMSON_TORCH = BLOCKS.register("crimson_torch", () -> new TorchBlock(AbstractBlock.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance().func_235838_a_((p_235466_0_) -> {
+    public static final RegistryObject<Block> CRIMSON_TORCH = BLOCKS.register("crimson_torch", () -> new TorchBlock(AbstractBlock.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance().setLightLevel((p_235466_0_) -> {
         return BlockLightingRegistries.soul_fire;
-    }).sound(SoundType.WOOD), ParticleTypes.field_239819_as_));
-    public static final RegistryObject<Block> CRIMSON_WALL_TORCH = BLOCKS.register("crimson_wall_torch", () -> new WallTorchBlock(AbstractBlock.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance().func_235838_a_((p_235465_0_) -> {
+    }).sound(SoundType.WOOD), ParticleTypes.REVERSE_PORTAL));
+    public static final RegistryObject<Block> CRIMSON_WALL_TORCH = BLOCKS.register("crimson_wall_torch", () -> new WallTorchBlock(AbstractBlock.Properties.create(Material.MISCELLANEOUS).doesNotBlockMovement().zeroHardnessAndResistance().setLightLevel((p_235465_0_) -> {
         return BlockLightingRegistries.soul_fire;
-    }).sound(SoundType.WOOD).lootFrom(BlockInit.CRIMSON_TORCH.get()), ParticleTypes.field_239819_as_));
+    }).sound(SoundType.WOOD).lootFrom(BlockInit.CRIMSON_TORCH.get()), ParticleTypes.REVERSE_PORTAL));
 }

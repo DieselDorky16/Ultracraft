@@ -8,7 +8,7 @@ import net.minecraft.block.material.MaterialColor;
 
 public class NetheriteTrapdoor extends TrapDoorBlock {
     public NetheriteTrapdoor() {
-        super(Block.Properties.create(Material.IRON, MaterialColor.BLACK).func_235861_h_().hardnessAndResistance(50.0F, 1200.0F).sound(SoundType.field_235594_P_).notSolid());
+        super(Block.Properties.create(Material.IRON, MaterialColor.BLACK).setRequiresTool().hardnessAndResistance(50.0F, 1200.0F).sound(SoundType.NETHERITE).notSolid());
 
     }
 

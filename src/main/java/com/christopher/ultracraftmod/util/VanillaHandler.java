@@ -22,10 +22,10 @@ public abstract class VanillaHandler {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
-    public static final RegistryObject<Block> NETHERITE_SLAB = BLOCKS.register("netherite_slab", () -> new SlabBlock(Block.Properties.from(Blocks.field_235397_ng_)));
-    public static final RegistryObject<Block> NETHERITE_STAIRS = BLOCKS.register("netherite_stairs", () -> new StairsBlock(()->Blocks.field_235397_ng_.getDefaultState(),Block.Properties.from(Blocks.field_235397_ng_)));
+    public static final RegistryObject<Block> NETHERITE_SLAB = BLOCKS.register("netherite_slab", () -> new SlabBlock(Block.Properties.from(Blocks.NETHERITE_BLOCK)));
+    public static final RegistryObject<Block> NETHERITE_STAIRS = BLOCKS.register("netherite_stairs", () -> new StairsBlock(()->Blocks.NETHERITE_BLOCK.getDefaultState(),Block.Properties.from(Blocks.NETHERITE_BLOCK)));
     public static final RegistryObject<Block> OBSIDIAN_STAIRS = BLOCKS.register("obsidian_stairs", () -> new StairsBlock(()->Blocks.OBSIDIAN.getDefaultState(),Block.Properties.from(Blocks.OBSIDIAN)));
-    public static final RegistryObject<Block> CRYING_OBSIDIAN_STAIRS = BLOCKS.register("crying_obsidian_stairs", () -> new StairsBlock(()->Blocks.field_235399_ni_.getDefaultState(),Block.Properties.from(Blocks.field_235399_ni_)));
+    public static final RegistryObject<Block> CRYING_OBSIDIAN_STAIRS = BLOCKS.register("crying_obsidian_stairs", () -> new StairsBlock(()->Blocks.CRYING_OBSIDIAN.getDefaultState(),Block.Properties.from(Blocks.CRYING_OBSIDIAN)));
 
     //BlockItems
     public static final RegistryObject<Item> NETHERITE_SLAB_ITEM = ITEMS.register("netherite_slab", () -> new BuildingBlocksItem_NETHERITE(NETHERITE_SLAB.get()));

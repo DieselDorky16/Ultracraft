@@ -130,7 +130,7 @@ public class WarpedBerries extends BushBlock implements IGrowable {
     @Override
     protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
         Block block = state.getBlock();
-        return block == Blocks.NETHERRACK || block == Blocks.field_235372_ml_;
+        return block == Blocks.NETHERRACK || block == Blocks.WARPED_NYLIUM;
     }
 
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {

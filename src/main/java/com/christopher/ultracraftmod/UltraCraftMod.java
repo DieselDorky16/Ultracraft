@@ -6,6 +6,7 @@ import com.christopher.ultracraftmod.items.BlockItemInit;
 import com.christopher.ultracraftmod.items.ItemInit;
 import com.christopher.ultracraftmod.items.ModSpawnEggInit;
 import com.christopher.ultracraftmod.potions.ModPotions;
+import com.christopher.ultracraftmod.util.SoundsInit;
 import com.christopher.ultracraftmod.util.UnobtainablesHandler;
 import com.christopher.ultracraftmod.util.VanillaHandler;
 import com.christopher.ultracraftmod.world.gen.CrimsonBerriesGen;
@@ -58,6 +59,7 @@ public class UltraCraftMod {
         BlockInit.BLOCKS.register(modEventBus);
         ItemInit.ITEMS.register(modEventBus);
         EnchantmentsInit.ENCHANTMENTS.register(modEventBus);
+        SoundsInit.SOUNDS.register(modEventBus);
 
         //Subregistries
         ModSpawnEggInit.ITEMS.register(modEventBus);
@@ -117,8 +119,8 @@ public class UltraCraftMod {
 
         if (e.getGui() instanceof IngameMenuScreen) {
 
-            e.addWidget(new Button(e.getWidgetList().get(6).field_230690_l_, e.getWidgetList().get(6).field_230691_m_ + 24,
-                    e.getWidgetList().get(6).func_230998_h_(), e.getWidgetList().get(6).getHeight(),
+            e.addWidget(new Button(e.getWidgetList().get(6).x, e.getWidgetList().get(6).y + 24,
+                    e.getWidgetList().get(6).getWidth(), e.getWidgetList().get(6).getHeight(),
                     new StringTextComponent(I18n.format("menu.modoption")),
                     (p_213055_1_) -> {
                         Minecraft.getInstance()
@@ -126,18 +128,18 @@ public class UltraCraftMod {
 
                     }));
 
-            e.getWidgetList().get(6).field_230690_l_ = e.getGui().field_230708_k_ / 2 - 102;
-            e.getWidgetList().get(6).func_230991_b_(204);
+            e.getWidgetList().get(6).x = e.getGui().width / 2 - 102;
+            e.getWidgetList().get(6).setWidth(204);
 
-            e.getWidgetList().get(7).field_230691_m_ += 24;
+            e.getWidgetList().get(7).y += 24;
 
-            e.getWidgetList().get(5).field_230691_m_ += 24;
+            e.getWidgetList().get(5).y += 24;
 
             for (Widget in : e.getWidgetList()) {
-                in.field_230691_m_ -= 16;
+                in.y -= 16;
             }
+
         }
 
     }
-
 }

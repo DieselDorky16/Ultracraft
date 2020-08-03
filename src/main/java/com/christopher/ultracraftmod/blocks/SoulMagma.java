@@ -19,15 +19,15 @@ import java.util.Random;
 
 public class SoulMagma extends MagmaBlock {
     public SoulMagma() {
-        super(Block.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).func_235861_h_().func_235838_a_((p_235452_0_) -> {
+        super(Block.Properties.create(Material.ROCK, MaterialColor.NETHERRACK).setLightLevel((p_235452_0_) -> {
             return BlockLightingRegistries.weak;
-        }).tickRandomly().hardnessAndResistance(0.5F).func_235827_a_((p_235445_0_, p_235445_1_, p_235445_2_, p_235445_3_) -> {
+        }).tickRandomly().hardnessAndResistance(0.5F).setAllowsSpawn((p_235445_0_, p_235445_1_, p_235445_2_, p_235445_3_) -> {
             return p_235445_3_.isImmuneToFire();
         }));
     }
     @Override
     public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn) {
-        if (!entityIn.func_230279_az_() && entityIn instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entityIn)) {
+        if (!entityIn.isImmuneToFire() && entityIn instanceof LivingEntity && !EnchantmentHelper.hasFrostWalker((LivingEntity)entityIn)) {
             entityIn.attackEntityFrom(DamageSource.HOT_FLOOR, SurfaceDamageFloat.soul_fire);
         }
 

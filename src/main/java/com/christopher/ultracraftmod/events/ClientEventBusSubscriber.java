@@ -21,5 +21,7 @@ public class ClientEventBusSubscriber {
         RenderTypeLookup.setRenderLayer(BlockInit.CRIMSON_BERRY_BUSH.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.WARPED_BERRY_BUSH.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.NETHERITE_TRAPDOOR.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.CRIMSON_TORCH.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.CRIMSON_WALL_TORCH.get(), RenderType.getCutout());
     }
 }

@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/DieselDorky16/Ultracraft/issues" #optional
 
 modId="ultracraft" #mandatory
 
-version="beta 1.0.0.54" #mandatory
+version="beta 1.0.0.56" #mandatory
 
 displayName="Ultracraft" #mandatory
 
@@ -23,7 +23,7 @@ credits="Thanks to self" #optional
 authors="By the creator of Enhancedcraft." #optional
 
 description='''
-From the creators of Enhancedcraft, this mod does something similar, adding new blocks and content.
+Adding new content and also adding missing contenet that should be in the game.
 '''
 
 [[dependencies.ultracraft]] #optional

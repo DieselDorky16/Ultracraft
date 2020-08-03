@@ -8,6 +8,6 @@ import net.minecraft.block.material.Material;
 public class WarpedNetherBrickMaterial extends Block {
 
     public WarpedNetherBrickMaterial() {
-        super(Block.Properties.create(Material.ROCK, NetherWartColor.WARPED).func_235861_h_().hardnessAndResistance(2.0F, 6.0F).sound(SoundType.field_235590_L_));
+        super(Block.Properties.create(Material.ROCK, NetherWartColor.WARPED).setRequiresTool().hardnessAndResistance(2.0F, 6.0F).sound(SoundType.NETHER_BRICK));
     }
 }

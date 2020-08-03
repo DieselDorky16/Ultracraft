@@ -28,7 +28,7 @@ import java.util.Set;
 public class HammerItem extends ToolItem {
     private static final Set<Material> field_234662_c_ = Sets.newHashSet(Material.ROCK);
     private static final Set<Block> field_150917_d_ = Sets.newHashSet(Blocks.OBSIDIAN);
-    protected static final Map<Block, Block> STONE_CRACKING_MAP = (new ImmutableMap.Builder<Block, Block>()).put(Blocks.STONE_BRICKS, Blocks.CRACKED_STONE_BRICKS).put(Blocks.INFESTED_STONE_BRICKS, Blocks.INFESTED_CRACKED_STONE_BRICKS).put(Blocks.NETHER_BRICKS, Blocks.field_235394_nH_).put(Blocks.field_235411_nu_, Blocks.field_235412_nv_).put(BlockInit.WARPED_NETHER_BRICKS.get(), BlockInit.CRACKED_WARPED_NETHER_BRICKS.get()).put(Blocks.RED_NETHER_BRICKS, BlockInit.CRACKED_RED_NETHER_BRICKS.get()).build();
+    protected static final Map<Block, Block> STONE_CRACKING_MAP = (new ImmutableMap.Builder<Block, Block>()).put(Blocks.STONE_BRICKS, Blocks.CRACKED_STONE_BRICKS).put(Blocks.INFESTED_STONE_BRICKS, Blocks.INFESTED_CRACKED_STONE_BRICKS).put(Blocks.NETHER_BRICKS, Blocks.CRACKED_NETHER_BRICKS).put(Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS).put(BlockInit.WARPED_NETHER_BRICKS.get(), BlockInit.CRACKED_WARPED_NETHER_BRICKS.get()).put(Blocks.RED_NETHER_BRICKS, BlockInit.CRACKED_RED_NETHER_BRICKS.get()).build();
     public HammerItem(
     IItemTier tier, float attackDamageIn, float attackSpeedIn, Item.Properties builder) {
         super(attackDamageIn, attackSpeedIn, tier, field_150917_d_, builder.addToolType(ToolType.get(ModToolTypes.HAMMER), tier.getHarvestLevel()));
@@ -67,6 +67,11 @@ public class HammerItem extends ToolItem {
 
     @Override
     public boolean canDisableShield(ItemStack stack, ItemStack shield, LivingEntity entity, LivingEntity attacker) {
+        return true;
+    }
+
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
         return true;
     }
 }

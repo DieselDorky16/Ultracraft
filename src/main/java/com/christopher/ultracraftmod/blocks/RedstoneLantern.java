@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockReader;
 @SuppressWarnings("deprecation")
 public class RedstoneLantern extends LanternBlock {
     public RedstoneLantern() {
-        super(Block.Properties.create(Material.IRON).func_235861_h_().hardnessAndResistance(3.5F).sound(SoundType.LANTERN).func_235838_a_((p_235447_0_) -> {
+        super(Block.Properties.create(Material.IRON).setRequiresTool().hardnessAndResistance(3.5F).sound(SoundType.LANTERN).setLightLevel((p_235447_0_) -> {
             return BlockLightingRegistries.redstone;
         }).notSolid());
     }

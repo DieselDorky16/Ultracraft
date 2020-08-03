@@ -1,0 +1,12 @@
+{
+  "entity.player.life_shroom_use": {
+    "category": "entity",
+    "subtitle": "entity.player.life_shroom_use",
+    "sounds": [
+      {
+        "name": "ultracraft:entity/player/life_shroom_use",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -17,7 +17,7 @@ public class WarpedNyliumOnlyBushBlock extends Block implements net.minecraftfor
     }
 
     protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
-        return state.isIn(Blocks.field_235372_ml_);
+        return state.isIn(Blocks.WARPED_NYLIUM);
     }
 
     /**
@@ -42,7 +42,7 @@ public class WarpedNyliumOnlyBushBlock extends Block implements net.minecraftfor
     }
 
     public boolean allowsMovement(BlockState state, IBlockReader worldIn, BlockPos pos, PathType type) {
-        return type == PathType.AIR && !this.field_235688_at_ ? true : super.allowsMovement(state, worldIn, pos, type);
+        return type == PathType.AIR && !this.canCollide ? true : super.allowsMovement(state, worldIn, pos, type);
     }
 
     @Override

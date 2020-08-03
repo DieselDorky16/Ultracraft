@@ -11,9 +11,9 @@ public class SoulShroomlight extends Block {
     public SoulShroomlight() {
         super(Block.Properties.create(Material.ORGANIC, MaterialColor.CYAN)
                 .hardnessAndResistance(1.0F)
-                .sound(SoundType.field_235582_D_)
+                .sound(SoundType.SHROOMLIGHT)
                 .harvestTool(ToolType.HOE)
-                .func_235838_a_((p_235439_0_) -> {
+                .setLightLevel((p_235439_0_) -> {
             return BlockLightingRegistries.soul_fire;
         }));
     }

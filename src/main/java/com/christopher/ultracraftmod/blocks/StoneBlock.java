@@ -5,6 +5,6 @@ import net.minecraft.block.Blocks;
 
 public class StoneBlock extends Block {
     public StoneBlock() {
-        super(Block.Properties.from(Blocks.field_235410_nt_).hardnessAndResistance(1.5F, 6.0F));
+        super(Block.Properties.from(Blocks.STONE).hardnessAndResistance(1.5F, 6.0F));
     }
 }

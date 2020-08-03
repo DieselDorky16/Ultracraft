@@ -10,7 +10,7 @@ public class OrientableStoneBlock extends RotatedPillarBlock {
     public OrientableStoneBlock() {
         super(Block.Properties.create(Material.EARTH)
                 .hardnessAndResistance(1.25F,4.2F)
-                .sound(SoundType.field_235587_I_)
+                .sound(SoundType.STONE)
                 .harvestTool(ToolType.PICKAXE));
     }
 }

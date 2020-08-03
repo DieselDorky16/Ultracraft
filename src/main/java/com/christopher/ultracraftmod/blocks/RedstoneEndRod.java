@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockReader;
 @SuppressWarnings("deprecation")
 public class RedstoneEndRod extends EndRodBlock {
     public RedstoneEndRod() {
-        super(Properties.create(Material.MISCELLANEOUS).zeroHardnessAndResistance().func_235838_a_((p_235454_0_) -> {
+        super(Properties.create(Material.MISCELLANEOUS).zeroHardnessAndResistance().setLightLevel((p_235454_0_) -> {
             return BlockLightingRegistries.redstone;
         }).sound(SoundType.WOOD).notSolid());
     }

@@ -38,7 +38,7 @@ import java.util.function.ToIntFunction;
 @SuppressWarnings("deprecation")
 public class RedstoneCampfire extends CampfireBlock {
     public RedstoneCampfire() {
-        super(true, 1, Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0F).sound(SoundType.WOOD).func_235838_a_(func_235420_a_()).notSolid());;
+        super(true, 1, Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN).hardnessAndResistance(2.0F).sound(SoundType.WOOD).notSolid());;
     }
 
     @Nullable
@@ -78,7 +78,7 @@ public class RedstoneCampfire extends CampfireBlock {
     }
     @Override
     public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
-        if (!entityIn.func_230279_az_() && state.get(LIT) && entityIn instanceof LivingEntity) {
+        if (!entityIn.isImmuneToFire() && state.get(LIT) && entityIn instanceof LivingEntity) {
             entityIn.attackEntityFrom(new DamageSource("fatal_shock").setDamageIsAbsolute().setDamageBypassesArmor().setDamageIsAbsolute(), SurfaceDamageFloat.fatal_redstone_shock);
         }
 
@@ -119,6 +119,6 @@ public class RedstoneCampfire extends CampfireBlock {
     }
     //This is an AccessTransformer Alternative. Please do not remove, or it will break the mod.
     private boolean isHayBlock(BlockState stateIn) {
-        return stateIn.isIn(Blocks.HAY_BLOCK);
+        return stateIn.isIn(Blocks.REDSTONE_BLOCK) && stateIn.isIn(Blocks.HAY_BLOCK);
     }
 }
