@@ -1,6 +1,0 @@
-Build: beta 1.0.0.56
-
-	
-	Fixed bugs
-
-=========

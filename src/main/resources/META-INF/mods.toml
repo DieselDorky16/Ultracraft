@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/DieselDorky16/Ultracraft/issues" #optional
 
 modId="ultracraft" #mandatory
 
-version="beta 1.0.0.56" #mandatory
+version="1.0" #mandatory
 
 displayName="Ultracraft" #mandatory
 

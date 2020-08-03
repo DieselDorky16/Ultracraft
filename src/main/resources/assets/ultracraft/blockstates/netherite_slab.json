@@ -4,7 +4,7 @@
       "model": "ultracraft:block/netherite_slab"
     },
     "type=double": {
-      "model": "ultracraft:block/warped_nether_bricks"
+      "model": "minecraft:block/netherite_block"
     },
     "type=top": {
       "model": "ultracraft:block/netherite_slab_top"

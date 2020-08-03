@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "block/ultracraft:golden_bars",
-        "edge": "block/ultracraft:golden_bars"
+        "particle": "ultracraft:block/golden_bars",
+        "edge": "ultracraft:block/golden_bars"
     },
     "elements": [
         {   "from": [ 7, 0.001, 7 ],
