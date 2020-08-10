@@ -1,6 +1,6 @@
 package com.christopher.ultracraftmod.items;
 
-import com.christopher.ultracraftmod.blocks.BlockInit;
+import com.christopher.ultracraftmod.blocks.ModBlocks;
 import com.christopher.ultracraftmod.common.ModToolTypes;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Sets;
@@ -28,7 +28,7 @@ import java.util.Set;
 public class HammerItem extends ToolItem {
     private static final Set<Material> field_234662_c_ = Sets.newHashSet(Material.ROCK);
     private static final Set<Block> field_150917_d_ = Sets.newHashSet(Blocks.OBSIDIAN);
-    protected static final Map<Block, Block> STONE_CRACKING_MAP = (new ImmutableMap.Builder<Block, Block>()).put(Blocks.STONE_BRICKS, Blocks.CRACKED_STONE_BRICKS).put(Blocks.INFESTED_STONE_BRICKS, Blocks.INFESTED_CRACKED_STONE_BRICKS).put(Blocks.NETHER_BRICKS, Blocks.CRACKED_NETHER_BRICKS).put(Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS).put(BlockInit.WARPED_NETHER_BRICKS.get(), BlockInit.CRACKED_WARPED_NETHER_BRICKS.get()).put(Blocks.RED_NETHER_BRICKS, BlockInit.CRACKED_RED_NETHER_BRICKS.get()).build();
+    protected static final Map<Block, Block> STONE_CRACKING_MAP = (new ImmutableMap.Builder<Block, Block>()).put(Blocks.STONE_BRICKS, Blocks.CRACKED_STONE_BRICKS).put(Blocks.INFESTED_STONE_BRICKS, Blocks.INFESTED_CRACKED_STONE_BRICKS).put(Blocks.NETHER_BRICKS, Blocks.CRACKED_NETHER_BRICKS).put(Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS).put(ModBlocks.WARPED_NETHER_BRICKS.get(), ModBlocks.CRACKED_WARPED_NETHER_BRICKS.get()).put(Blocks.RED_NETHER_BRICKS, ModBlocks.CRACKED_RED_NETHER_BRICKS.get()).build();
     public HammerItem(
     IItemTier tier, float attackDamageIn, float attackSpeedIn, Item.Properties builder) {
         super(attackDamageIn, attackSpeedIn, tier, field_150917_d_, builder.addToolType(ToolType.get(ModToolTypes.HAMMER), tier.getHarvestLevel()));

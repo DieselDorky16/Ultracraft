@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "ultracraft:golden_hammer"
+  },
+  "addition": {
+    "item": "ultracraft:emerald_ingot"
+  },
+  "result": {
+    "item": "ultracraft:emerald_hammer"
+  }
+}

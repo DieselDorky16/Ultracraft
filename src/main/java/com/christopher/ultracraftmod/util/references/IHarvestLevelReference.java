@@ -7,5 +7,6 @@ public interface IHarvestLevelReference {
     public static final int IRON = 2;
     public static final int DIAMOND = 3;
     public static final int NETHERITE = 4;
+    public static final int EMERALD = 5;
 
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XEX",
+    "XXX"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "X": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "ultracraft:emerald_ingot"
+  }
+}

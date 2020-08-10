@@ -1,6 +1,6 @@
 package com.christopher.ultracraftmod.world.gen;
 
-import com.christopher.ultracraftmod.blocks.BlockInit;
+import com.christopher.ultracraftmod.blocks.ModBlocks;
 import com.christopher.ultracraftmod.util.references.NetherBiome;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
@@ -18,7 +18,7 @@ public class NetherIronOreGen {
                 ConfiguredPlacement customConfig = Placement.COUNT_RANGE
                         .configure(new CountRangeConfig(3, 0, 0, 128));
                 biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-                        .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHER_ORE_REPLACEABLES, BlockInit.NETHER_IRON_ORE.get().getDefaultState(), 10))
+                        .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHER_ORE_REPLACEABLES, ModBlocks.NETHER_IRON_ORE.get().getDefaultState(), 10))
                         .withPlacement(customConfig));
             }
         }

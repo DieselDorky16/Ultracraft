@@ -8,5 +8,6 @@ public interface IEnchantabilityReference {
         public static final int IRON = 14;
         public static final int DIAMOND = 10;
         public static final int NETHERITE = 15;
+        public static final int EMERALD = 22;
     }
 }

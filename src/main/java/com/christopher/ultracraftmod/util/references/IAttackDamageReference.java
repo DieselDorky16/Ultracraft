@@ -7,6 +7,7 @@ public interface IAttackDamageReference {
     public static final float IRON = 4.0F;
     public static final float DIAMOND = 5.0F;
     public static final float NETHERITE = 6.0F;
+    public static final float EMERALD = 7.0F;
 
     public static interface AttackDamageDefaults {
         public static final float GOLD = 0.0F;
@@ -24,6 +25,7 @@ public interface IAttackDamageReference {
         public static final float IRON = 6.0F;
         public static final float DIAMOND = 5.0F;
         public static final float NETHERITE = 5.0F;
+        public static final float EMERALD = 6.0F;
 
     }
 
@@ -34,6 +36,7 @@ public interface IAttackDamageReference {
         public static final float IRON = -2.6F;
         public static final float DIAMOND = -2.5F;
         public static final float NETHERITE = -2.5F;
+        public static final float EMERALD = -2.0F;
 
     }
 

@@ -1,6 +1,6 @@
 package com.christopher.ultracraftmod.items.special_powerups;
 
-import com.christopher.ultracraftmod.util.SoundsInit;
+import com.christopher.ultracraftmod.util.extra.ModSounds;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -29,7 +29,7 @@ public class LifeShroomItem extends Item {
             playerIn.heal(20.0F);
         }
         playerIn.shouldHeal();
-        playerIn.playSound(SoundsInit.LIFE_SHROOM_USE.get(), 2.0F, 1.0F);
+        playerIn.playSound(ModSounds.LIFE_SHROOM_USE.get(), 2.0F, 1.0F);
         if (!worldIn.isRemote) {
             if (!playerIn.abilities.isCreativeMode) {
                 itemstack.shrink(1);

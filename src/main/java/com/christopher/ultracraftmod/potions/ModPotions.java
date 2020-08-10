@@ -1,6 +1,6 @@
 package com.christopher.ultracraftmod.potions;
 
-import com.christopher.ultracraftmod.UltraCraftMod;
+import com.christopher.ultracraftmod.Ultracraft;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
@@ -12,10 +12,10 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public abstract class ModPotions {
     public static final DeferredRegister<Effect> POTIONS = DeferredRegister.create(ForgeRegistries.POTIONS,
-            UltraCraftMod.MOD_ID);
+            Ultracraft.MOD_ID);
 
     public static final DeferredRegister<Potion> POTION_EFFECTS = DeferredRegister.create(ForgeRegistries.POTION_TYPES,
-            UltraCraftMod.MOD_ID);
+            Ultracraft.MOD_ID);
 
     public static void init() {
         POTIONS.register(FMLJavaModLoadingContext.get().getModEventBus());

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:golden_hoe"
+  },
+  "addition": {
+    "item": "ultracraft:emerald_ingot"
+  },
+  "result": {
+    "item": "ultracraft:emerald_hoe"
+  }
+}

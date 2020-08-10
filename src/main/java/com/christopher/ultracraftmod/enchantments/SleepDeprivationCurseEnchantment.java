@@ -50,6 +50,12 @@ public class SleepDeprivationCurseEnchantment extends Enchantment {
     public boolean isCurse() {
         return true;
     }
+
+    @Override
+    public boolean canApplyAtEnchantingTable(ItemStack stack) {
+        return false;
+    }
+
     @Override
     public boolean canApplyTogether(Enchantment ench) {
         return super.canApplyTogether(ench) && ench != Enchantments.BINDING_CURSE;

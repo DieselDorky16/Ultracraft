@@ -12,4 +12,6 @@ public interface IRepairMaterialReference {
     public static final Ingredient DIAMOND = Ingredient.fromItems(Items.DIAMOND);
     public static final Ingredient NETHERITE = Ingredient.fromItems(Items.NETHERITE_INGOT);
 
+    public static final Ingredient EMERALD = Ingredient.fromItems(Items.EMERALD);
+
 }

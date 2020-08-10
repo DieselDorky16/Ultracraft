@@ -1,6 +1,6 @@
 package com.christopher.ultracraftmod.blocks;
 
-import com.christopher.ultracraftmod.items.ItemInit;
+import com.christopher.ultracraftmod.items.ModItems;
 import com.christopher.ultracraftmod.util.references.NetherWartColor;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -17,6 +17,6 @@ public class WarpedNetherWart extends NetherWartBlock {
     }
     @Override
     public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
-        return new ItemStack(ItemInit.WARPED_WART.get());
+        return new ItemStack(ModItems.WARPED_WART.get());
     }
 }
